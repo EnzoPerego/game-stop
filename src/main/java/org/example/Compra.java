@@ -1,28 +1,25 @@
 package org.example;
 
-import java.util.List;
-
 public class Compra {
     private Usuario comprador;
-    private List<Produto> produtos;
+    private Produto produto;
+    private int quantidade;
+    private double valorTotal;
 
-    public Usuario getComprador() {
-        return comprador;
-    }
-
-    public void setComprador(Usuario comprador) {
+    public Compra(Usuario comprador, Produto produto, int quantidade) {
         this.comprador = comprador;
+        this.produto = produto;
+        this.quantidade = quantidade;
+        this.valorTotal = produto.getPreco() * quantidade;
     }
 
-    public List<Produto> getProdutos() {
-        return produtos;
+    public void realizarCompra() {
+        produto.reduzirQuantidade(quantidade);
+        comprador.adicionarProduto(produto);
+        System.out.println("Compra realizada com sucesso: " + produto.getNome() + " - " + quantidade + " unidades.");
     }
 
-    public void setProdutos(List<Produto> produtos) {
-        this.produtos = produtos;
-    }
-
-    public void adicionarProduto(Produto produto) {
-        this.produtos.add(produto);
+    public double getValorTotal() {
+        return valorTotal;
     }
 }
