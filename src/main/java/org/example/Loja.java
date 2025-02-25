@@ -25,11 +25,6 @@ public class Loja {
         venda.realizarVenda();
     }
 
-    public void adicionarAvaliacao(Usuario usuario, Produto produto, int nota, String comentario) {
-        Avaliacao avaliacao = new Avaliacao(usuario, produto, nota, comentario);
-        avaliacao.exibirAvaliacao();
-    }
-
     public void realizarPagamento(double valor, String metodoPagamento) {
         Pagamento pagamento = new Pagamento(valor, metodoPagamento);
         pagamento.realizarPagamento();
