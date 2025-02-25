@@ -29,4 +29,12 @@ public class Loja {
         Pagamento pagamento = new Pagamento(valor, metodoPagamento);
         pagamento.realizarPagamento();
     }
+
+    public Estoque getEstoque() {
+        return estoque;
+    }
+
+    public void setEstoque(Estoque estoque) {
+        this.estoque = estoque;
+    }
 }

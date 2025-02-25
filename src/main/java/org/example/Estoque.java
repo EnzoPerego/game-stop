@@ -22,5 +22,13 @@ public class Estoque {
             System.out.println(produto.getNome() + " - " + produto.getPreco() + " - Quantidade: " + produto.getQuantidade());
         }
     }
+
+    public HashMap<Integer, Produto> getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(HashMap<Integer, Produto> produtos) {
+        this.produtos = produtos;
+    }
 }
 

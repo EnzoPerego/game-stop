@@ -34,4 +34,6 @@ public class Produto {
     public double calcularValorTotal() {
         return preco * quantidade;
     }
+
+
 }
