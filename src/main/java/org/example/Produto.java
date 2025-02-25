@@ -2,38 +2,36 @@ package org.example;
 
 public class Produto {
     private String nome;
-    private int id;
     private double preco;
     private int quantidade;
 
-    public Produto(String nome, int id, double preco, int quantidade) {
-        this.nome = nome;
-        this.id = id;
-        this.preco = preco;
-        this.quantidade = quantidade;
-    }
+
 
     public String getNome() {
         return nome;
     }
 
-    public int getId() {
-        return id;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public double getPreco() {
         return preco;
     }
 
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
     public int getQuantidade() {
         return quantidade;
     }
 
-    public void reduzirQuantidade(int quantidadeVendida) {
-        if (quantidadeVendida <= quantidade) {
-            this.quantidade -= quantidadeVendida;
-        } else {
-            System.out.println("Quantidade insuficiente em estoque!");
-        }
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public double calcularValorTotal() {
+        return preco * quantidade;
     }
 }
