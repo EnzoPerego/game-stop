@@ -5,6 +5,8 @@ public class Produto {
     private double preco;
     private int quantidade;
 
+
+
     public String getNome() {
         return nome;
     }
