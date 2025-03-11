@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.usuarios.Usuario;
+
 public class Avaliacao {
     private Usuario usuario;
     private String tipoTransacao; // "Venda", "Compra" ou "Empréstimo"

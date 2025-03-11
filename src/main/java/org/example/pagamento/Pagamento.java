@@ -1,4 +1,4 @@
-package org.example;
+package org.example.pagamento;
 
 public class Pagamento {
     private double valor;

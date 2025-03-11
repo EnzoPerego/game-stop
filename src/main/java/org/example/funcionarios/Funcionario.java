@@ -1,4 +1,4 @@
-package org.example;
+package org.example.funcionarios;
 
 public class Funcionario {
     private int id;
@@ -29,4 +29,3 @@ public class Funcionario {
         this.cargo = cargo;
     }
 }
-
