@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.usuarios.Usuario;
+
 import java.time.LocalDate;
 import java.util.List;
 
