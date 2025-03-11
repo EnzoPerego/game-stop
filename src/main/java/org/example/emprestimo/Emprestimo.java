@@ -3,6 +3,8 @@ package org.example.emprestimo;
 import org.example.Produto;
 import org.example.Usuario;
 
+import org.example.usuarios.Usuario;
+
 import java.time.LocalDate;
 import java.util.List;
 
