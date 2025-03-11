@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.produto.Produto;
+
 public class Compra {
     private Usuario comprador;
     private Produto produto;

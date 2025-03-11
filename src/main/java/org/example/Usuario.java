@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.produto.Produto;
+
 import java.util.ArrayList;
 
 public class Usuario {

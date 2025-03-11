@@ -1,4 +1,4 @@
-package org.example;
+package org.example.produto;
 
 import java.util.HashMap;
 
@@ -20,6 +20,9 @@ public class Produto {
         produtosCadastrados.put(this.id, this);
     }
 
+    public static HashMap<Integer, Produto> getProdutosCadastrados() {
+        return produtosCadastrados;
+    }
 
     public void reduzirQuantidade(int quantidade) {
         if (this.quantidade >= quantidade) {
