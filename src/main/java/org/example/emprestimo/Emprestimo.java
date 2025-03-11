@@ -1,4 +1,11 @@
-package org.example;
+package org.example.emprestimo;
+
+import org.example.Produto;
+import org.example.Usuario;
+
+import org.example.usuarios.Usuario;
+
+import org.example.produto.Produto;
 
 import java.time.LocalDate;
 import java.util.List;

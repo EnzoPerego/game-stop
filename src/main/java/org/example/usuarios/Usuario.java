@@ -1,4 +1,8 @@
-package org.example;
+package org.example.usuarios;
+
+import org.example.Produto;
+
+import org.example.produto.Produto;
 
 import java.util.ArrayList;
 
@@ -10,14 +14,6 @@ public class Usuario {
     public Usuario(String nome, String email) {
         this.nome = nome;
         this.email = email;
-    }
-
-    public void adicionarProduto(Produto produto) {
-        produtosComprados.add(produto);
-    }
-
-    public ArrayList<Produto> getProdutosComprados() {
-        return produtosComprados;
     }
 
     public String getNome() {
@@ -36,7 +32,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public void setProdutosComprados(ArrayList<Produto> produtosComprados) {
-        this.produtosComprados = produtosComprados;
+    public ArrayList<Produto> getProdutosComprados() {
+        return produtosComprados;
+    }
+
+    public void adicionarProduto(Produto produto) {
+        produtosComprados.add(produto);
     }
 }

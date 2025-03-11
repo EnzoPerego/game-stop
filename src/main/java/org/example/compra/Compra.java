@@ -3,6 +3,8 @@ package org.example.compra;
 import org.example.Produto;
 import org.example.Usuario;
 
+import org.example.usuarios.Usuario;
+
 public class Compra {
     private Usuario comprador;
     private Produto produto;
