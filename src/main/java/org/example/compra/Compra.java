@@ -1,7 +1,7 @@
 package org.example.compra;
 
-import org.example.Produto;
-import org.example.Usuario;
+import org.example.produto.Produto;
+import org.example.usuarios.Usuario;
 
 import org.example.usuarios.Usuario;
 
