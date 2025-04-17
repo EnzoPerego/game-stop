@@ -1,8 +1,7 @@
 package org.example.avaliacao;
 
-import org.example.Usuario;
-
 import org.example.usuarios.Usuario;
+
 
 public class Avaliacao {
     private Usuario usuario;

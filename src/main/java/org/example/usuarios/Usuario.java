@@ -1,8 +1,7 @@
 package org.example.usuarios;
 
-import org.example.Produto;
-
 import org.example.produto.Produto;
+
 
 import java.util.ArrayList;
 
